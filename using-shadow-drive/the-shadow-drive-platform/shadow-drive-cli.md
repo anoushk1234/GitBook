@@ -8,7 +8,7 @@ You can install the Shadow Drive CLI by downloading one of the files below that 
 
 1.  Linux x64
 
-    `curl https://shdw-drive.genesysgo.net/GgJzHnEzMMFwYazhxeAY26q6zfoEc1LNmA7fwi7AWePE/shdw-drive-linux-arm64.tar.bz2 -o shdw-drive-linux-x64.tar.bz2 && tar -xvf shdw-drive-linux-x64.tar.bz2`
+    `curl https://shdw-drive.genesysgo.net/GgJzHnEzMMFwYazhxeAY26q6zfoEc1LNmA7fwi7AWePE/shdw-drive-linux-x64.tar.bz2 -o shdw-drive-linux-x64.tar.bz2 && tar -xvf shdw-drive-linux-x64.tar.bz2`
 2.  Linux ARM
 
     `curl https://shdw-drive.genesysgo.net/GgJzHnEzMMFwYazhxeAY26q6zfoEc1LNmA7fwi7AWePE/shdw-drive-linux-arm64.tar.bz2 -o shdw-drive-linux-arm64.tar.bz2 && tar -xvf shdw-drive-linux-arm64.tar.bz2`
