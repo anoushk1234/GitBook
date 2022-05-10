@@ -1,6 +1,6 @@
 # Shadow Drive CLI
 
-Using Shadow Drive through the CLI is as easy as - create your storage account, upload a file, and get your finalized file URL back after uploading.
+Using Shadow Drive through the CLI is as easy as (1) creating your storage account, (2) uploading a file, and (3) getting your finalized file URL back after uploading.
 
 ## Installation
 
@@ -70,9 +70,9 @@ Parameters:
 
 Example: `shdw-drive make-storage-account-immutable --keypair ~/.config/solana/id.json`
 
-This will lock your storage account and all files within in permanently. You will not be able to add/reduce storage on this account, delete the storage account, edit or delete files under this storage account.
+This will permanently lock your storage account and all files within it. You will not be able to add/reduce storage on this account, delete the storage account, or edit/delete files under this storage account.
 
-When running this command, you will be presented with a list of storage accounts that the wallet passed in is an admin of and has authority to make the account immutable.
+When running this command, you will be presented with a list of storage accounts that the wallet passed in, is an admin of, and has authority to make the account immutable.
 
 The stake from the storage account that you mark as immutable will also be deducted and closed.
 
@@ -167,7 +167,7 @@ Parameters:
 
 Example: `shdw-drive upload-multiple-files --keypair ~/.config/solana/id.json --directory ~/Documents/my-expensive-jpgs/`
 
-This will allow you to upload all files in a given directory. If the file already exists, the upload for that file will be skipped and you will get back the finalized Shadow Drive URL in the response. When running this command, you will be presented with a list of storage accounts to choose from and only the ones with enough storage for the entire directory supplied will be selectable.
+This will allow you to upload all files in a given directory. If the file already exists, the upload for that file will be skipped and you will get back the finalized Shadow Drive URL in the response. When running this command, you will be presented with a list of storage accounts to choose from, and only the ones with enough storage for the entire directory supplied will be selectable.
 
 The log of this command will be written to a `.json` file in your current directory.
 
@@ -184,7 +184,7 @@ Example: `shdw-drive edit-file --keypair ~/.config/solana/id.json --file ~/Docum
 
 This will replace a file that exists on Shadow Drive with the new file supplied.
 
-NOTE: The file you are wanting to edit must be the same name of the file that already exists in your storage account. If it does not already exist on Shadow Drive, your request will fail. If the file you want to submit to Shadow Drive is a different name, you must perform a new upload request instead.
+NOTE: The file you are wanting to edit must be the same name of the file that already exists in your storage account. If it does not already exist on Shadow Drive, your request will fail. If the file you want to submit to Shadow Drive has a different name, you must perform a new upload request instead.
 
 Parameters:
 
@@ -213,7 +213,7 @@ Parameters:
 
 Example: `shdw-drive undelete-file --keypair ~/.config/solana/id.json --url https://shdw-drive.genesysgo.net/abc123def456ghi789/something-important.md`
 
-This will undo a deletion request for the file supplied if it's within the grace period still.
+This will undo a deletion request for the file supplied if it's still within the grace period.
 
 NOTE: There is a grace period between when you request for your storage account to be deleted and when it's actually deleted. Currently it is set to be within the Solana Epoch that you requested to delete your storage account. For example, if you requested to delete a storage account in Solana Epoch 306, once Solana's clock reaches epoch 307, you are no longer able to undo the deletion request and your file will be available for a crank to fully process the deletion.
 
