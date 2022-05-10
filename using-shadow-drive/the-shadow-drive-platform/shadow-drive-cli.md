@@ -6,10 +6,6 @@ Using Shadow Drive through the CLI is as easy as (1) creating your storage accou
 
 You can install the Shadow Drive CLI by downloading one of the files below that matches your system's architecture:
 
-{% hint style="danger" %}
-BINARIES BELOW ARE OUT OF DATE! As soon as the smart contract has finished deploying on Solana we will update!
-{% endhint %}
-
 1.  Linux x64
 
     `curl https://shdw-drive.genesysgo.net/HxUAdsVaibQPU9YSqq4vJV1uJGN3LDeoW4949GbhX1M/shdw-drive-linux-x64.tar.bz2 -o shdw-drive-linux-x64.tar.bz2 && tar -xvf shdw-drive-linux-x64.tar.bz2`
