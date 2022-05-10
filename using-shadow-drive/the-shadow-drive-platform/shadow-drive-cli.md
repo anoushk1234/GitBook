@@ -12,23 +12,23 @@ BINARIES BELOW ARE OUT OF DATE! As soon as the smart contract has finished deplo
 
 1.  Linux x64
 
-    `curl https://shdw-drive.genesysgo.net/DVpgLeSDPjtEKFr4CUyvxRkrnUZedz859guZoPoEhJH/shdw-drive-linux-x64.tar.bz2 -o shdw-drive-cli-linux-x64.tar.bz2 && tar -xzvf shdw-drive-linux-x64.tar.bz2`
+    `curl https://shdw-drive.genesysgo.net/HxUAdsVaibQPU9YSqq4vJV1uJGN3LDeoW4949GbhX1M/shdw-drive-linux-x64.tar.bz2 -o shdw-drive-linux-x64.tar.bz2 && tar -xvf shdw-drive-linux-x64.tar.bz2`
 2.  Linux ARM
 
-    `curl https://shdw-drive.genesysgo.net/DVpgLeSDPjtEKFr4CUyvxRkrnUZedz859guZoPoEhJH/shdw-drive-linux-arm64.tar.bz2 -o shdw-drive-cli-linux-arm64.tar.bz2 && tar -xzvf shdw-drive-linux-arm64.tar.bz2`
+    `curl https://shdw-drive.genesysgo.net/HxUAdsVaibQPU9YSqq4vJV1uJGN3LDeoW4949GbhX1M/shdw-drive-linux-arm64.tar.bz2 -o shdw-drive-linux-arm64.tar.bz2 && tar -xvf shdw-drive-linux-arm64.tar.bz2`
 3.  MacOS x64
 
-    `curl https://shdw-drive.genesysgo.net/DVpgLeSDPjtEKFr4CUyvxRkrnUZedz859guZoPoEhJH/shdw-drive-macos-x64.tar.bz2 -o shdw-drive-cli-macos-x64.tar.bz2 && tar -xzvf shdw-drive-linux-x64.tar.bz2`
+    `curl https://shdw-drive.genesysgo.net/HxUAdsVaibQPU9YSqq4vJV1uJGN3LDeoW4949GbhX1M/shdw-drive-macos-x64.tar.bz2 -o shdw-drive-macos-x64.tar.bz2 && tar -xvf shdw-drive-linux-x64.tar.bz2`
 4.  MacOS ARM
 
-    `curl https://shdw-drive.genesysgo.net/DVpgLeSDPjtEKFr4CUyvxRkrnUZedz859guZoPoEhJH/shdw-drive-macos-arm64.tar.bz2 -o shdw-drive-cli-macos-arm64.tar.bz2 && tar -xzvf shdw-drive-linux-arm64.tar.bz2`
+    `curl https://shdw-drive.genesysgo.net/HxUAdsVaibQPU9YSqq4vJV1uJGN3LDeoW4949GbhX1M/shdw-drive-macos-arm64.tar.bz2 -o shdw-drive-macos-arm64.tar.bz2 && tar -xvf shdw-drive-linux-arm64.tar.bz2`
 
 After downloading the CLI executable binary, you can run it with `./shdw-drive` or you can add it to your shell's PATH by moving it into a directory that is either already exported to your PATH (like `/usr/bin`) or move it to a directory like `~/bin/shdw-drive` and run `export PATH=$PATH:~/bin/shdw-drive` to add it to your current session's PATH.
 
-For more information on how to add an executable binary to your path permanently, please see here:&#x20;
+For more information on how to add an executable binary to your path permanently, please see here:
 
 1. Linux: [https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix](https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix)
-2. MacOS:&#x20;
+2. MacOS:
    1. [https://stackoverflow.com/questions/11530090/adding-a-new-entry-to-the-path-variable-in-zsh](https://stackoverflow.com/questions/11530090/adding-a-new-entry-to-the-path-variable-in-zsh)
    2. [https://scriptingosx.com/2017/04/about-bash\_profile-and-bashrc-on-macos/](https://scriptingosx.com/2017/04/about-bash\_profile-and-bashrc-on-macos/)
 
@@ -228,7 +228,7 @@ Parameters:
 
 Example: `shdw-drive airdrop-shdw -r FRANKC3ibsaBW1o2qRuu3kspyaV4gHBuUfZ5uq9SXsqa`
 
-This command will request an airdrop of devnet SHDW to your wallet.&#x20;
+This command will request an airdrop of devnet SHDW to your wallet.
 
 NOTE: This is only while Shadow Drive is in development testing. If you try to make this request once Shadow Drive is deployed to mainnet, you will get an error.
 
