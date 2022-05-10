@@ -8,16 +8,16 @@ You can install the Shadow Drive CLI by downloading one of the files below that 
 
 1.  Linux x64
 
-    `curl https://shdw-drive.genesysgo.net/HxUAdsVaibQPU9YSqq4vJV1uJGN3LDeoW4949GbhX1M/shdw-drive-linux-x64.tar.bz2 -o shdw-drive-linux-x64.tar.bz2 && tar -xvf shdw-drive-linux-x64.tar.bz2`
+    `curl https://shdw-drive.genesysgo.net/GgJzHnEzMMFwYazhxeAY26q6zfoEc1LNmA7fwi7AWePE/shdw-drive-linux-arm64.tar.bz2 -o shdw-drive-linux-x64.tar.bz2 && tar -xvf shdw-drive-linux-x64.tar.bz2`
 2.  Linux ARM
 
-    `curl https://shdw-drive.genesysgo.net/HxUAdsVaibQPU9YSqq4vJV1uJGN3LDeoW4949GbhX1M/shdw-drive-linux-arm64.tar.bz2 -o shdw-drive-linux-arm64.tar.bz2 && tar -xvf shdw-drive-linux-arm64.tar.bz2`
+    `curl https://shdw-drive.genesysgo.net/GgJzHnEzMMFwYazhxeAY26q6zfoEc1LNmA7fwi7AWePE/shdw-drive-linux-arm64.tar.bz2 -o shdw-drive-linux-arm64.tar.bz2 && tar -xvf shdw-drive-linux-arm64.tar.bz2`
 3.  MacOS x64
 
-    `curl https://shdw-drive.genesysgo.net/HxUAdsVaibQPU9YSqq4vJV1uJGN3LDeoW4949GbhX1M/shdw-drive-macos-x64.tar.bz2 -o shdw-drive-macos-x64.tar.bz2 && tar -xvf shdw-drive-linux-x64.tar.bz2`
+    `curl https://shdw-drive.genesysgo.net/GgJzHnEzMMFwYazhxeAY26q6zfoEc1LNmA7fwi7AWePE/shdw-drive-macos-x64.tar.bz2 -o shdw-drive-macos-x64.tar.bz2 && tar -xvf shdw-drive-linux-x64.tar.bz2`
 4.  MacOS ARM
 
-    `curl https://shdw-drive.genesysgo.net/HxUAdsVaibQPU9YSqq4vJV1uJGN3LDeoW4949GbhX1M/shdw-drive-macos-arm64.tar.bz2 -o shdw-drive-macos-arm64.tar.bz2 && tar -xvf shdw-drive-linux-arm64.tar.bz2`
+    `curl https://shdw-drive.genesysgo.net/GgJzHnEzMMFwYazhxeAY26q6zfoEc1LNmA7fwi7AWePE/shdw-drive-macos-arm64.tar.bz2 -o shdw-drive-macos-arm64.tar.bz2 && tar -xvf shdw-drive-linux-arm64.tar.bz2`
 
 After downloading the CLI executable binary, you can run it with `./shdw-drive` or you can add it to your shell's PATH by moving it into a directory that is either already exported to your PATH (like `/usr/bin`) or move it to a directory like `~/bin/shdw-drive` and run `export PATH=$PATH:~/bin/shdw-drive` to add it to your current session's PATH.
 
