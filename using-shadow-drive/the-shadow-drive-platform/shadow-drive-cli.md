@@ -186,6 +186,17 @@ Parameters:
 
 ![](../../.gitbook/assets/upload-multiple-files.gif)
 
+It is possible some files will not upload - and this will be reflected in the `.json` file mentioned above. The results are also printed to the terminal when the upload-multiple-files command completes. You can identify which files have failed to upload by searching for 'location: null' in the file.
+
+![](../../.gitbook/assets/shdw_multiple_upload_fail.png)
+
+ To re-upload the files that failed to upload when you initially ran the command - simply rerun the same command. The command checks if a file has already been uploaded and then moves on to the files which haven't yet been uploaded. 
+
+![](../../.gitbook/assets/shdw_succes_retry_multi_upload.png)
+
+The following command was used for this, with the folder containing files [0-10].gif & [0-10].json:
+shdw-drive upload-multiple-files --env mainnet-beta --keypair /home/ssc/.config/solana/test.json -d test_diamond/
+
 ### Edit File
 
 Example: `shdw-drive edit-file --keypair ~/.config/solana/id.json --file ~/Documents/something-important --url https://shdw-drive.genesysgo.net/abc123def456ghi789/something-important.md`
