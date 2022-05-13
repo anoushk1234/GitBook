@@ -21,7 +21,7 @@ tar -xvf shdw-drive-linux-arm64.tar.bz2
 3.  MacOS x64
 
 ```bash
-curl https://shdw-drive.genesysgo.net/GgJzHnEzMMFwYazhxeAY26q6zfoEc1LNmA7fwi7AWePE/shdw-drive-macos-x64.tar.bz2 -o shdw-drive-macos-x64.tar.bz2 
+curl https://shdw-drive.genesysgo.net/GgJzHnEzMMFwYazhxeAY26q6zfoEc1LNmA7fwi7AWePE/shdw-drive-macos-x64.tar.bz2 -o shdw-drive-macos-x64.tar.bz2
 tar -xvf shdw-drive-macos-x64.tar.bz2
 ```
 4.  MacOS ARM
@@ -44,7 +44,7 @@ For more information on how to add an executable binary to your path permanently
 
 The basic flow of Shadow Drive is as follows:
 
-1. Get some [$SHDW](https://www.orca.so) in your wallet
+1. Get some [$SHDW](https://www.orca.so) in your wallet (you will need a [command line wallet](https://docs.solana.com/es/wallet-guide/cli))
 2. Create your storage account with the [create storage account](shadow-drive-cli.md#create-storage-account) command
 3. Upload your file(s) with the [upload file](shadow-drive-cli.md#upload-file) or [upload multiple files](shadow-drive-cli.md#upload-multiple-files) commands
 4. Optional: Mark your storage account as immutable to permanently lock your files in place with the [make storage account immutable command](shadow-drive-cli.md#make-storage-account-immutable)
@@ -171,6 +171,8 @@ Parameters:
 
 ![](../../.gitbook/assets/upload0file.gif)
 
+> **Note**: If you get the error `Server response status message: failed to send transaction: Transaction simulation failed: Transaction leaves an account with a lower balance than rent-exempt minimum` it means you do not have the minimum amount of SOL required in your wallet for your account to be [rent-exempted](https://docs.solana.com/developing/programming-model/accounts#rent-exemption) after the operation.<br /><br />Send some SOL to your wallet and try again.
+
 ### Upload Multiple Files
 
 Example: `shdw-drive upload-multiple-files --keypair ~/.config/solana/id.json --directory ~/Documents/my-expensive-jpgs/`
@@ -190,7 +192,7 @@ It is possible some files will not upload - and this will be reflected in the `.
 
 ![](../../.gitbook/assets/shdw_multiple_upload_fail.png)
 
- To re-upload the files that failed to upload when you initially ran the command - simply rerun the same command. The command checks if a file has already been uploaded and then moves on to the files which haven't yet been uploaded. 
+ To re-upload the files that failed to upload when you initially ran the command - simply rerun the same command. The command checks if a file has already been uploaded and then moves on to the files which haven't yet been uploaded.
 
 ![](../../.gitbook/assets/shdw_succes_retry_multi_upload.png)
 
