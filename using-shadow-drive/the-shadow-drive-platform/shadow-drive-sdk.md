@@ -1,3 +1,10 @@
 # Shadow Drive SDK
 
-## This section will be updated in the near future
+The Shadow Drive SDK is written to provide Solana developers with all the tools they need in order to build on top of Shadow Drive.
+
+
+
+[https://www.npmjs.com/package/@shadow-drive/sdk\
+](https://www.npmjs.com/package/@shadow-drive/sdkhttps://www.npmjs.com/package/@shadow-drive/cli)
+
+[https://genesysgo.github.io/shadow-drive/](https://genesysgo.github.io/shadow-drive/)
