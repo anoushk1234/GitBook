@@ -4,41 +4,13 @@ Using Shadow Drive through the CLI is as easy as (1) creating your storage accou
 
 ## Installation
 
-You can install the Shadow Drive CLI by downloading one of the files below that matches your system's architecture:
+Before installing the Shadow Drive CLI, please make sure you have Node.js version 16 or newer installed on your system.
 
-1.  Linux x64
+Once you have Node.js installed, you can run:
 
-```bash
-curl https://shdw-drive.genesysgo.net/GgJzHnEzMMFwYazhxeAY26q6zfoEc1LNmA7fwi7AWePE/shdw-drive-linux-x64.tar.bz2 -o shdw-drive-linux-x64.tar.bz2
-tar -xvf shdw-drive-linux-x64.tar.bz2
+```shell
+npm install -g @shadow-drive/cli
 ```
-2.  Linux ARM
-
-```bash
-curl https://shdw-drive.genesysgo.net/GgJzHnEzMMFwYazhxeAY26q6zfoEc1LNmA7fwi7AWePE/shdw-drive-linux-arm64.tar.bz2 -o shdw-drive-linux-arm64.tar.bz2
-tar -xvf shdw-drive-linux-arm64.tar.bz2
-```
-3.  MacOS x64
-
-```bash
-curl https://shdw-drive.genesysgo.net/GgJzHnEzMMFwYazhxeAY26q6zfoEc1LNmA7fwi7AWePE/shdw-drive-macos-x64.tar.bz2 -o shdw-drive-macos-x64.tar.bz2
-tar -xvf shdw-drive-macos-x64.tar.bz2
-```
-4.  MacOS ARM
-
-```bash
-curl https://shdw-drive.genesysgo.net/GgJzHnEzMMFwYazhxeAY26q6zfoEc1LNmA7fwi7AWePE/shdw-drive-macos-arm64.tar.bz2 -o shdw-drive-macos-arm64.tar.bz2
-tar -xvf shdw-drive-macos-arm64.tar.bz2
-```
-
-After downloading the CLI executable binary, you can run it with `./shdw-drive` or you can add it to your shell's PATH by moving it into a directory that is either already exported to your PATH (like `/usr/bin`) or move it to a directory like `~/bin/shdw-drive` and run `export PATH=$PATH:~/bin/shdw-drive` to add it to your current session's PATH.
-
-For more information on how to add an executable binary to your path permanently, please see here:
-
-1. Linux: [https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix](https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix)
-2. MacOS:
-   1. [https://stackoverflow.com/questions/11530090/adding-a-new-entry-to-the-path-variable-in-zsh](https://stackoverflow.com/questions/11530090/adding-a-new-entry-to-the-path-variable-in-zsh)
-   2. [https://scriptingosx.com/2017/04/about-bash\_profile-and-bashrc-on-macos/](https://scriptingosx.com/2017/04/about-bash\_profile-and-bashrc-on-macos/)
 
 ## Getting Started
 
@@ -171,7 +143,9 @@ Parameters:
 
 ![](../../.gitbook/assets/upload0file.gif)
 
-> **Note**: If you get the error `Server response status message: failed to send transaction: Transaction simulation failed: Transaction leaves an account with a lower balance than rent-exempt minimum` it means you do not have the minimum amount of SOL required in your wallet for your account to be [rent-exempted](https://docs.solana.com/developing/programming-model/accounts#rent-exemption) after the operation.<br /><br />Send some SOL to your wallet and try again.
+> **Note**: If you get the error `Server response status message: failed to send transaction: Transaction simulation failed: Transaction leaves an account with a lower balance than rent-exempt minimum` it means you do not have the minimum amount of SOL required in your wallet for your account to be [rent-exempted](https://docs.solana.com/developing/programming-model/accounts#rent-exemption) after the operation.\
+> \
+> Send some SOL to your wallet and try again.
 
 ### Upload Multiple Files
 
@@ -190,14 +164,13 @@ Parameters:
 
 It is possible some files will not upload - and this will be reflected in the `.json` file mentioned above. The results are also printed to the terminal when the upload-multiple-files command completes. You can identify which files have failed to upload by searching for 'location: null' in the file.
 
-![](../../.gitbook/assets/shdw_multiple_upload_fail.png)
+![](../../.gitbook/assets/shdw\_multiple\_upload\_fail.png)
 
 To re-upload the files that failed to upload when you initially ran the command - simply rerun the same command. The command checks if a file has already been uploaded and then moves on to the files which haven't yet been uploaded.
 
-![](../../.gitbook/assets/shdw_succes_retry_multi_upload.png)
+![](../../.gitbook/assets/shdw\_succes\_retry\_multi\_upload.png)
 
-The following command was used for this, with the folder containing files [0-10].gif & [0-10].json:
-shdw-drive upload-multiple-files --env mainnet-beta --keypair /home/ssc/.config/solana/test.json -d test_diamond/
+The following command was used for this, with the folder containing files \[0-10].gif & \[0-10].json: shdw-drive upload-multiple-files --env mainnet-beta --keypair /home/ssc/.config/solana/test.json -d test\_diamond/
 
 ### Edit File
 
