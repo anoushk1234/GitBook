@@ -2,11 +2,11 @@
 
 Using Shadow Drive through the CLI is as easy as (1) creating your storage account, (2) uploading a file, and (3) getting your finalized file URL back after uploading.
 
-## Installation
+## Install & Update
 
 Before installing the Shadow Drive CLI, please make sure you have Node.js version 16 or newer installed on your system.
 
-Once you have Node.js installed, you can run:
+Once you have Node.js installed, you can run the following command to install and update the Shadow Drive CLI:&#x20;
 
 ```shell
 npm install -g @shadow-drive/cli
