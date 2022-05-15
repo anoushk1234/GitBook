@@ -11,7 +11,7 @@ This guide will be updated over time and the community should feel empowered to 
 
 ****
 
-**May 9th, 2022 Update:** Shadow Drive Launched! The next update to these documents will be focused more on GenesysGo, the team, our building philosophy, and our future plans.
+**May 14th, 2022 Update:** The Shdw Drive SDK section has been updated with the live SDK. If you find issues or bugs, please submit a PR and we will tackle it immediately!
 {% endhint %}
 
 Please note, any information contained herein is always subject to change. Events in blockchain move quickly and change happens fast. A huge part of the team's philosophy is centered on the importance of being agile in order to adapt to changing environments. The Solana Mainnet changes relatively frequently and, as an infrastructure project, we need the ability to adapt rapidly.
